@@ -1,0 +1,2 @@
+# bjarnes-laeringsportfolio
+ Bjarnes læringsportfolio
