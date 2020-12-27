@@ -1,0 +1,244 @@
+/* RESET */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+
+/*  END RESET */
+
+    
+Body {
+    background-color: rgb(100,130,100);
+    margin: 0px;
+    line-height: 1.3;
+}
+
+header {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-family: questa-slab, serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(50,65,50);
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: questa-slab, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+}
+
+h3 {
+    font-family: questa-slab, serif;
+    font-style: normal;
+    font-weight: 700;
+    color:black;
+    font-size: 18px;
+    text-align: left;
+}
+
+h6 {
+    font-family: questa-slab, serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(50,65,50);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 1.5;
+}
+
+p {
+    font-family: questa-slab, serif;
+    font-style: normal;
+    font-weight: 400;
+    color:black;
+    font-size: 18px;
+    
+}
+
+ul {
+    list-style-position: outside;
+    margin-left: 18px;
+    text-align: left;
+    font-family: questa-slab, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+}
+
+blockquote {
+    font-family: questa-slab, serif;
+    font-style: italic;
+    font-weight: 400;
+    color:black;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    font-family: questa-slab, serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.knap-delemne {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(100,130,100);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.knap-delemne:hover {
+    box-shadow: 0px 0px 10px -2px rgb(50,65,50);
+    background-color: rgb(193,205,193);
+}
+
+.knapsamling-moerk {
+    background-color: rgb(154,174,154);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.knapsamling-lys {
+    background-color: rgb(193,205,193);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.tekst1 {
+    background-color: rgb(154,174,154);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
+    column-gap: 25px;
+    box-shadow: 0px 0px 20px -5px rgb(50,65,50);
+    grid-area: t1;
+}
+
+.tekst2 {
+    background-color: rgb(131,155,131);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
+    column-gap: 25px;
+    box-shadow: 0px 0px 20px -5px rgb(50,65,50);
+    grid-area: t2;
+}
+
+.tekst3 {
+    background-color: rgb(193,205,193);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
+    column-gap: 25px;
+    box-shadow: 0px 0px 20px -5px rgb(50,65,50);
+    grid-area: t3;
+}
+
+.tekst4 {
+    background-color: rgb(154,174,154);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
+    column-gap: 25px;
+    box-shadow: 0px 0px 20px -5px rgb(50,65,50);
+    grid-area: t4;
+}
+
+.tekst5 {
+    background-color: rgb(131,155,131);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
+    column-gap: 25px;
+    box-shadow: 0px 0px 20px -5px rgb(50,65,50);
+    grid-area: t5;
+}
+
+.tekst6 {
+    background-color: rgb(193,205,193);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
+    column-gap: 25px;
+    box-shadow: 0px 0px 20px -5px rgb(50,65,50);
+    grid-area: t6;
+}
+
+.billede1 {
+    background-color: rgb(154,174,154);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    column-gap: 25px;
+    box-shadow: 0px 0px 20px -5px rgb(50,65,50);
+    grid-area: b1;
+}
+
+#stortbillede {
+    width: 100%;
+}
+
+.del-emne-grid {
+        margin-top: 0px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 35px;
+        grid-gap: 20px;
+    }
+
+@media screen and (min-width: 700px) {
+    a {font-size: 14px;}
+    p {font-size: 14px;}
+    ul {font-size: 14px;}
+    blockquote {font-size: 14px;}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Versionsstyring</title>
+        <link rel="stylesheet" href="../laer-bjarne.css">
+        <link rel="stylesheet" href="versionsstyring.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yox6usb.css"> <!-- Inkluder Adobe Fonts -->
+    </head>
+
+    <body>
+        <header>
+            <h1>Versionsstyring</h1>
+        </header>
+        
+        <div class="del-emne-grid">
+
+           
+            <div class="tekst1">
+                <p>Når man arbejder på et projekt, som involverer en fil eller en samling af filer, kan det være praktisk at bruge en form for versionsstyring. Dette gør det nemlig muligt at vende tilbage til et tidligere stadie af filens/filernes tilstand. Man kan f.eks. være i gang med at lave en hjemmeside og foretager løbende ændringer i de tilhørende HTML- og CSS-filer. Måske kommer man til at lave en rettelse eller kombination af flere rettelser, som medfører fejl. I sådant et tilfælde vil det være praktisk at kunne vende tilbage til et tidligere stadie af filen, hvor den virker, og så tilrette filen på en anden måde end i første omgang.</p><br>
+
+                <h2>Lavpraktisk versionsstyring</h2>
+                <p>Man kan lave et lavpraktisk system til versionsstyring med nummererede backups med tilhørende små eller store beskrivelser af stadiet. På den måde kan man sikre sig mod fejl, som er svære at rette op på. Det kan dog være svært at finde ud af helt nøjagtigt, hvad man har foretaget sig imellem to bestemte backups, specielt hvis filerne er komplicerede. Hvis der er flere personer, som arbejder på samme projekt, bliver det endnu mere kompliceret at administrere et sådant Version Control System (VCS).</p><br>
+
+                <h2>Linus Torvalds opfinder Linux</h2>
+                <p>Da Linus Torvalds udviklede operativsystemet Linux havde han behov for et system, som kunne administrere ændringer i koden til Linux. Samtidig skulle det også være muligt for andre udviklere at bidrage til udviklingen af Linux, under kontrol af Linus Torvalds.</p><br>
+
+                <h2>Versionsstyrings-systemet Git</h2>
+                <p>Til dette formål opfandt han versionsstyrings-systemet Git. Det er et system, som kan registrere, hvilke ændringer, der er foretaget hvornår i en fil. Det gjorde det lettere for ham at kontrollere udviklingen af Linux. Ved at bruge Git, kunne Linus Torvalds tjekke hvad de andre havde ændret i koden og derefter tage stilling til om denne ændring skulle implementeres i Linux.</p><br>
+            </div>
+
+            <div class="billede1">
+                <img src="versionsstyring.png" id="stortbillede" alt="Versionsstyring">
+                <blockquote>
+                    Versionsstyring ved hjælp af Git.
+                </blockquote>
+            </div>
+            
+            <div class="tekst2">
+                 <h2>Flere arbejder sammen vha. Git</h2>
+                <p>Produktion af hjemmesider, apps og andre multimedieprojekter er ofte en kompliceret proces, som involverer flere, måske ligefrem mange mennesker, som hver især producerer en del af koden. Det kan være praktisk at samle alle disse kode-bidrag til den samlede kode løbende. Dette kan gøres ved at bruge Git.
+                </p><br>
+
+                <h2>GitHub er et interface til Git</h2>
+                <p>GitHub er en hjemmeside med en grafisk brugerflade, som gør det let at bruge Git. GitHub gør det også muligt at dele ens repositorys (filsamlinger) med andre og evt. lade dem arbejde på dem også. Da GitHub gør det muligt at dele ens repositories med andre, er GitHub også en slags socialt medie for kodere. Man kan også håndtere Git ved hjælp af andre værktøjer end Github, f.eks. GitLab eller BitBucket.</p><br>
+
+                <h2>Repository</h2>
+                <p>Et repository er en vilkårlig filsamling under udvikling. I dette eksempel siger vi det er filerne til et bestemt website. Et repository kan være lokalt (local repository). Det vil sige at det ligger på en lokal computer. Det er kun brugeren af denne computer, der har adgang til dette repository. Eller det kan ligge på en server ”i skyen”, så flere kan have adgang til det (remote repository). Et repository er at betragte som den sande kode, som er opdateret.</p><br>
+                
+                <h2>Commit</h2>
+                <p>Når man har lavet en ændring til ens kode, som man mener er værd at gemme, så kan man lave en Commit. Herved uploades ens aktuelle version af koden til ens lokale repository. Hvis man senere kommer til at lave en fejl, kan man vende tilbage til denne commit, som man ved virker. Man kan kalde en commit for en milepæl. Hver gang man har foretaget en ændring, som virker, bør man lave en commit. Man kan knytte kommentarer til hver commit, sådan at man lettere kan holde styr på, hvad der er foretaget af ændringer i forhold til sidste commit.</p><br>
+
+                <h2>Push og pull</h2>
+                <p>Når man har lavet et antal commits, som man vil føje til Remote repository, laver man en push command. GitHub ændrer derved versionen af koden, som ligger i Remote repository, sådan at ændringerne i ens lokale repository bliver inkluderet heri. Så kan de andre, som koder på samme projekt vælge at lave en pull command for at få den version merged sammen med deres egen lokale repository og arbejde videre ud fra denne »sammensmeltning«.</p><br>
+
+                <h2>Branch</h2>
+                <p>En branch er en variant af kildekoden på det remote repository. Man kan push’e commits (ændringer) fra ens lokale repo til remote repo og man kan pull commits fra remote repository til ens lokale repository. Dette er master branch, som vi altid vil være sikker på virker. Man laver en ny branch, når man vil arbejde med en ny feature, som man ikke er helt sikker på virker/kommer til at virke. Derfor holder man denne branch og ændringerne til den for sig selv. Når og hvis man så når til et punkt, hvor man kan sige at målet med denne branch er nået og denne er klar til at blive inkluderet i master-branch’en, så kan man merge denne branch sammen med master-branch’en.</p><br>
+            </div>
+            
+        </div>
+ 
+ </body>                                                                
+</html>
