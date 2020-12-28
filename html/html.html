@@ -17,62 +17,78 @@
         
         <div class="del-emne-grid">
 
-           
             <div class="tekst1">
-                <p>Opbygning af HTML-kode
-                    HTML-kode er opbygget af tags, som er tekstblokke markeret med en start (mindre-end-tegnet &#60) og en slutning (større-end-tegnet &#62). Imellem disse to tegn er som minimum et tag-name, som definerer hvad meningen med dette tag er. Der kan også efter tag-name’et være en eller flere attributter, som angiver en egenskab ved dette tag. Denne illustration viser et eksempel på opbygningen af et tag.
-                </p><br>
+                <h2>Hvad betyder HTML?</h2>
+                <p>HTML er et sprog, som bruges til at definere og præsentere indhold på hjemmesider. Men lad os lige se på selve opbygningen af forkortelsen. Den står for »HyperText Markup Language«, som kan oversættes til »Hypertekst opmærkningssprog«. Hypertekst er er form for tekster, som refererer til hinanden. I praksis foregår denne reference ved at man kan klikke på et ord i en tekst (eller på et billede) og derved blive ledt hen til et sted med yderligere information om dette ord eller billede. Opmærkningssprog er en form for sprog, hvor teksten kombineres med information om teksten. Denne information kan f.eks. være hvordan teksten skal præsenteres, hvad teksten handler om eller om den pågældende tekst har en bestemt funktion. Et HTML-dokument består af en serie af elementer (HTML-elementer), som beskriver hvad den pågældende hjemmeside skal vise i browseren.</p><br>
 
+                <h2>Hvordan bruges HTML i praksis?</h2>
+                <p>Når man i en browser på en telefon, tablet eller computer besøger en hjemmeside, sker der i praksis det at serveren, som hoster (lagrer) hjemmesiden sender en HTML-fil afsted til browseren. Ved hjælp af markup-delen af teksten i HTML-filen præsenterer browseren så indholdet af HTML-filen i et browser-vindue.</p><br>
+
+                <h2>Hvordan laver man HTML-filer?</h2>
+                <p>Da HTML-filer er simple tekstfiler, kan de skrives i et tekstbehandlingsprogram. Det er dog et krav at dette tekstbehandlingprogram er af en helt simpel type. F.eks. kan Mac-programmet TextEdit bruges, hvis man forud for arkivering konverterer teksten til almindelig tekst. Grunden til at man f.eks. ikke kan skrive HTML i Word og gemme filen som et almindeligt Word-dokument er at Word benytter sig af sit eget opmærkningssprog til at markere valg af skrifttyper, indrykninger, filnavn osv. Al denne opmærknings-information fra Word vil ødelægge html-filen.</p><br>
+
+                <h2>Kode-editor</h2>
+                <p>I praksis bruger man en kode-editor til at skrive HTML-filer med. Det er et program, som er designet til at skrive web-kode med. Når man heri påbegynder et HTML-dokument og har arkiveret det med endelsen ».html«, ved kodeeditoren at man er ved at skrive en HTML-fil og vil derfor hjælpe en med syntaksen, så teksten overholder standarden for opbygning af HTML-kode. Dette gør det væsentlig lettere at skrive HTML-kode.</p><br>
+
+                <h2>Opbygning af HTML-kode</h2>
+                <p>HTML-kode er opbygget af tags, som er tekstblokke markeret med en start (mindre-end-tegnet &#60 og en slutning (større-end-tegnet &#62). Imellem disse to tegn er som minimum et tag-navn, som definerer hvad meningen med dette tag er. Der kan også efter tag-navnet være en eller flere attributter, som angiver en egenskab ved dette tag. Disse attributter adskilles med et ordmellemrum. De fleste tags hænger sammen to og to. Det ene tag fungerer som start-tag og det andet som sluttag. Et eksempel herpå er p-tag’et, som definerer et afsnit i en tekst (paragraph). Det bruges på følgende måde: <i>&#60p&#62</i>Teksten i afsnittet<i>&#60/p&#62</i>. Slut-tag’et ser ud som start-tag’et bortset fra at der umiddelbart efter mindre-end-tegnet er en skråstreg. Alle andre tag-sæt er opbygget på samme måde. Eventuelle attibutter skrives i start-tag’et.</p><br>
+
+                 <img src="simpel-hjemmeside.png" id="stortbillede" alt="Eksempel på HTML-kode.">
             
-                <img src="hello-world.png" id="stortbillede">
-               
+                <p>Dette screenshot fra kode-editor-programmet Brackets viser et eksempel på opbygningen af en (meget simpel) hjemmeside:</p><br>
                 
-                <br>
+                <ul>
+                    <li>Det første tag <i>&#60!DOCTYPE html&#62</i> er en obligatorisk start på en HTML-fil. Dette tag viser at denne fil er en HTML-fil.</li>
+                    
+                    <li>Det næste tag <i>&#60html lang=”da”&#62</i> er et starttag. Det angiver starten af selve HTML-koden. »lang=”da”« er en attribut til html-tag’et, som viser at sproget i HTML-filen er dansk. Slut-tag’et <i>&#60/html&#62</i> nederst i koden, som hænger sammen med html-start-tagget, angiver slutningen af HTML-koden.</li>
 
-                <h2>Empathise</h2>
-                <p>Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 Tekst 1 </p>
+                    <li>Starttag’et <i>&#60head&#62</i> og det tilhørende sluttag<i>&#60/head&#62</i> omfavner metadata for HTML-filen (information om HTML-filen). Denne information bliver ikke vist på hjemmesiden. Title-tagget er dog navnet på siden, som vises i fane-hovedet i browseren. Meta-tag’et bruges her til at definere hvilket tegnsæt, der er brugt på siden (UTF-8-tegnsættet). Dette tag kan også bruges til at angive søgeord for siden.</li>
 
-                <br>
+                    <li>Body-start-tag’et og body-slut-tag’et omfavner det indhold, som vises i browseren. Under normale omstændigheder vil body’en være langt den største del af hjemmesidens kode. I dette eksempel er det ikke tilfældet, da denne side er meget simpel.</li>
 
-               
+                    <li>For at gøre koden mere overskuelig bruger man indrykninger til at vise hvad der hører sammen. Linier under hinanden som holder venstrekant er på samme niveau i html-koden. For at vise at en eller flere linier er indeholdt i noget andet, rykker man disse linier en tabulering mod højre i forhold til det de er indeholdt i. Et eksempel herpå er meta-tag’et og title-tag’et i nedenstående eksempel. Disse to linier er indeholdt i head-tag’et.
+                    </li>
+                    
+                    <li>Et andet eksempel på indrykninger er head-tag’et og body-tag’et. Disse er rykket ind i forhold til html-tag’et, som omkranser disse to tags.</li>
+                    
+                    <li>Læg mærke til tallene yderste til venstre. De viser linie-numrene. Det er praktisk at kunne bruge disse linienumre, når man refererer til et bestemt sted i koden - specielt hvis der er flere hundrede linier.</li>
 
-                <br>
+                </ul>
+            </div>                        
+    
+          
+            <div class="billede2">
+                <img src="html-elementer.png" id="stortbillede" alt="Opbygning af HTML-elementer.">
+                <blockquote>
+                    Opbygning af HTML-elementer.
+                </blockquote>
             </div>
-
-             <div class="billede1">
-                    <img src="design-thinking-princip-figur.png" id="stortbillede" alt="De 6 faser i Design Thinking">
-                    <blockquote>
-                        De 6 faser i Design Thinking.
-                    </blockquote>
-                </div>
-            
+               
+        
             <div class="tekst2">
-
-                <h2>Tekst 2</h2>
-                <p>Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 Tekst 2 </p><br>
+                <h2>Opbygning af HTML-elementer</h2>
+                <p>Illustrationen viser princippet i opbygningen af HTML-elementer. Det øverste (p-tag’et) og det nederste (title-tag’et) er som de fleste HTML-elementer bygget af et start-tag og et slut-tag. Det midterste (img-tag’et) er ikke to-delt. Det indsætter et billede det sted i koden, hvor tag’et står. Src-attributten angiver den relative sti (i forhold til den aktuelle html-fil) til billedfilen og filens navn. Alt-attributten er en alternate-tekst. Denne tekst vises, hvis stien til billedfilen er brudt. Teksten bruges også af søgemaskiner til at finde billeder med et bestemt indhold. Derfor er det vigtigt at bruge en alt-tekst, som beskriver billedet godt.</p><br>
                 
-                <br>
+                <h2>Semantiske tags</h2>
+                <p>Tags opdeles i semantiske og ikke-semantiske tags. Semantiske tags har den egenskab at de definerer hvad indholdet er. Eksempler herpå er:</p><br>
+                <ul>
+                    <li><i>&#60h1&#62</i>…<i>&#60/h1&#62</i> definerer at teksten heri er en overskrift (heading). Det samme gør sig gældende for h2-h6, som er underoverskrifter i forskellige niveauer. H1-overskriften skiller sig dog ud ved at der skal være netop en af den på hver webside. De andre (h2-h6) kan bruges efter behag.</li>
+                    <li><i>&#60p&#62</i>…<i>&#60/p&#62</i> viser at teksten heri er et afsnit i en tekst</li>
+                    <li><i>&#60head&#62</i>…<i>&#60/head&#62</i> viser at indholdet er en slags metadata om siden og at det ikke vises i browseren.</li>
+                    <li><i>&#60body&#62</i>…<i>&#60/body&#62</i> indeholder sidens reelle indhold, som vises i browseren.</li>  
+                </ul><br>
                 
-                <p>Jeg var i gruppe med Terkel, Marie, Nicklas, Niklas og Veli. Vores løsning af opgaven kan ses i denne PDF:</p>
-                
-                <button class="knap-delemne" type="button"> <a href="aflevering-1-2-4-skive-festival.pdf" target="_blank"> Skive Festival </a></button>
-                
+                <p>Det er en fordel at bruge semantiske tags, når det er muligt, da de bruges af maskiner til at opsøge bestemte dele af en hjemmeside. Det er også en fordel mht. SEO, da søgemaskinen lettere kan finde hvad den leder efter.</p>
             </div>
             
 
             <div class="tekst3">
                 <h2>Tekst 3</h2>
-                <p>Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 Tekst 3 </p>
-
-                <br>
-
-                
-                <h3>Videoer om projektet</h3>
-                <p>Vores arbejde i gruppen blev dokumenteret i disse 5 videoer:</p>
+                <p>hello-world.png</p><br>
 
                 <button class="knap-delemne" type="button"> <a href="https://www.youtube.com/watch?v=gXtJK75qvAo&feature=youtu.be" target="_blank">Problemstillinger</a></button><br>
-
             </div>
+            
         </div>
  
  </body>                                                                
