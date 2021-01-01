@@ -19,7 +19,7 @@
 
             <div class="tekst1">
                 <h2>Hvad betyder HTML?</h2>
-                <p>HTML er et sprog, som bruges til at definere og præsentere indhold på hjemmesider. Men lad os lige se på selve opbygningen af forkortelsen. Den står for »HyperText Markup Language«, som kan oversættes til »Hypertekst opmærkningssprog«. Hypertekst er er form for tekster, som refererer til hinanden. I praksis foregår denne reference ved at man kan klikke på et ord i en tekst (eller på et billede) og derved blive ledt hen til et sted med yderligere information om dette ord eller billede. Opmærkningssprog er en form for sprog, hvor teksten kombineres med information om teksten. Denne information kan f.eks. være hvordan teksten skal præsenteres, hvad teksten handler om eller om den pågældende tekst har en bestemt funktion. Et HTML-dokument består af en serie af elementer (HTML-elementer), som beskriver hvad den pågældende hjemmeside skal vise i browseren.</p><br>
+                <p>HTML er et sprog, som bruges til at definere og præsentere indhold på hjemmesider. Men lad os lige se på selve opbygningen af forkortelsen. Den står for »HyperText Markup Language«, som kan oversættes til »Hypertekst opmærkningssprog«. Hypertekst er er form for tekster, som refererer til hinanden. I praksis foregår denne reference ved at man kan klikke på et ord i en tekst og derved blive ledt hen til et sted med yderligere information om dette ord. Opmærkningssprog er en form for sprog, hvor teksten kombineres med information om teksten. Denne information kan f.eks. være hvordan teksten skal præsenteres, hvad teksten handler om eller om den pågældende tekst har en bestemt funktion. Et HTML-dokument består af en serie af elementer (HTML-elementer), som beskriver hvad den pågældende hjemmeside skal vise i browseren.</p><br>
 
                 <h2>Hvordan bruges HTML i praksis?</h2>
                 <p>Når man i en browser på en telefon, tablet eller computer besøger en hjemmeside, sker der i praksis det at serveren, som hoster (lagrer) hjemmesiden sender en HTML-fil afsted til browseren. Ved hjælp af markup-delen af teksten i HTML-filen præsenterer browseren så indholdet af HTML-filen i et browser-vindue.</p><br>
@@ -31,7 +31,7 @@
                 <p>I praksis bruger man en kode-editor til at skrive HTML-filer med. Det er et program, som er designet til at skrive web-kode med. Når man heri påbegynder et HTML-dokument og har arkiveret det med endelsen ».html«, ved kodeeditoren at man er ved at skrive en HTML-fil og vil derfor hjælpe en med syntaksen, så teksten overholder standarden for opbygning af HTML-kode. Dette gør det væsentlig lettere at skrive HTML-kode.</p><br>
 
                 <h2>Opbygning af HTML-kode</h2>
-                <p>HTML-kode er opbygget af tags, som er tekstblokke markeret med en start (mindre-end-tegnet &#60 og en slutning (større-end-tegnet &#62). Imellem disse to tegn er som minimum et tag-navn, som definerer hvad meningen med dette tag er. Der kan også efter tag-navnet være en eller flere attributter, som angiver en egenskab ved dette tag. Disse attributter adskilles med et ordmellemrum. De fleste tags hænger sammen to og to. Det ene tag fungerer som start-tag og det andet som sluttag. Et eksempel herpå er p-tag’et, som definerer et afsnit i en tekst (paragraph). Det bruges på følgende måde: <i>&#60p&#62</i>Teksten i afsnittet<i>&#60/p&#62</i>. Slut-tag’et ser ud som start-tag’et bortset fra at der umiddelbart efter mindre-end-tegnet er en skråstreg. Alle andre tag-sæt er opbygget på samme måde. Eventuelle attibutter skrives i start-tag’et.</p><br>
+                <p>HTML-kode er opbygget af tags, som er tekstblokke markeret med en start (mindre-end-tegnet &#60) og en slutning (større-end-tegnet &#62). Imellem disse to tegn er som minimum et tag-navn, som definerer hvad meningen med dette tag er. Der kan også efter tag-navnet være en eller flere attributter, som angiver en egenskab ved dette tag. Disse attributter adskilles med et ordmellemrum. De fleste tags hænger sammen to og to. Det ene tag fungerer som start-tag og det andet som sluttag. Et eksempel herpå er p-tag’et, som definerer et afsnit i en tekst (paragraph). Det bruges på følgende måde: <i>&#60p&#62</i>Teksten i afsnittet<i>&#60/p&#62</i>. Slut-tag’et ser ud som start-tag’et bortset fra at der umiddelbart efter mindre-end-tegnet er en skråstreg. Alle andre tag-sæt er opbygget på samme måde. Eventuelle attibutter skrives i start-tag’et.</p><br>
 
                  <img src="simpel-hjemmeside.png" id="stortbillede" alt="Eksempel på HTML-kode.">
             
@@ -42,16 +42,16 @@
                     
                     <li>Det næste tag <i>&#60html lang=”da”&#62</i> er et starttag. Det angiver starten af selve HTML-koden. »lang=”da”« er en attribut til html-tag’et, som viser at sproget i HTML-filen er dansk. Slut-tag’et <i>&#60/html&#62</i> nederst i koden, som hænger sammen med html-start-tagget, angiver slutningen af HTML-koden.</li>
 
-                    <li>Starttag’et <i>&#60head&#62</i> og det tilhørende sluttag<i>&#60/head&#62</i> omfavner metadata for HTML-filen (information om HTML-filen). Denne information bliver ikke vist på hjemmesiden. Title-tagget er dog navnet på siden, som vises i fane-hovedet i browseren. Meta-tag’et bruges her til at definere hvilket tegnsæt, der er brugt på siden (UTF-8-tegnsættet). Dette tag kan også bruges til at angive søgeord for siden.</li>
+                    <li>Starttag’et <i>&#60head&#62</i> og det tilhørende sluttag <i>&#60/head&#62</i> omfavner metadata for HTML-filen (information om HTML-filen). Denne information bliver ikke vist på hjemmesiden. Title-tagget er dog navnet på siden, som vises i fane-hovedet i browseren. Meta-tag’et bruges her til at definere hvilket tegnsæt, der er brugt på siden (UTF-8-tegnsættet). Dette tag kan også bruges til at angive søgeord for siden.</li>
 
                     <li>Body-start-tag’et og body-slut-tag’et omfavner det indhold, som vises i browseren. Under normale omstændigheder vil body’en være langt den største del af hjemmesidens kode. I dette eksempel er det ikke tilfældet, da denne side er meget simpel.</li>
 
-                    <li>For at gøre koden mere overskuelig bruger man indrykninger til at vise hvad der hører sammen. Linier under hinanden som holder venstrekant er på samme niveau i html-koden. For at vise at en eller flere linier er indeholdt i noget andet, rykker man disse linier en tabulering mod højre i forhold til det de er indeholdt i. Et eksempel herpå er meta-tag’et og title-tag’et i nedenstående eksempel. Disse to linier er indeholdt i head-tag’et.
+                    <li>For at gøre koden mere overskuelig, bruger man indrykninger til at vise hvad der hører sammen. Linjer under hinanden som holder venstrekant er på samme niveau i html-koden. For at vise at en eller flere linjer er indeholdt i noget andet, rykker man disse linjer en tabulering mod højre i forhold til det de er indeholdt i. Et eksempel herpå er meta-tag’et og title-tag’et i det viste eksempel. Disse to linjer er indeholdt i head-tag’et.
                     </li>
                     
                     <li>Et andet eksempel på indrykninger er head-tag’et og body-tag’et. Disse er rykket ind i forhold til html-tag’et, som omkranser disse to tags.</li>
                     
-                    <li>Læg mærke til tallene yderste til venstre. De viser linie-numrene. Det er praktisk at kunne bruge disse linienumre, når man refererer til et bestemt sted i koden - specielt hvis der er flere hundrede linier.</li>
+                    <li>Læg mærke til tallene yderste til venstre. De viser linje-numrene. Det er praktisk at kunne bruge disse linjenumre, når man refererer til et bestemt sted i koden - specielt hvis den består af flere hundrede linjer.</li>
 
                 </ul>
             </div>                        
@@ -78,7 +78,7 @@
                     <li><i>&#60body&#62</i>…<i>&#60/body&#62</i> indeholder sidens reelle indhold, som vises i browseren.</li>  
                 </ul><br>
                 
-                <p>Det er en fordel at bruge semantiske tags, når det er muligt, da de bruges af maskiner til at opsøge bestemte dele af en hjemmeside. Det er også en fordel mht. SEO, da søgemaskinen lettere kan finde hvad den leder efter.</p>
+                <p>Det er en fordel at bruge semantiske tags, når det er muligt, da de bruges af maskiner til at opsøge bestemte dele af en hjemmeside. Det er også en fordel mht. SEO, da søgemaskinen lettere kan finde, hvad den leder efter.</p>
             </div>
             
 

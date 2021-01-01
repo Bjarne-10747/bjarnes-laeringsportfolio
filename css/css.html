@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+        <link rel="stylesheet" href="../laer-bjarne.css">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yox6usb.css"> <!-- Inkluder Adobe Fonts -->
+    </head>
+    <body>
+        <header>
+            <h1>CSS</h1>
+        </header>
+        
+        <div class="del-emne-grid">
+
+            <div class="tekst1">
+                <h2>Meningen med CSS</h2>
+                <p>Ved at skrive en HTML-fil kan man definere hvilket indhold, der skal være på en hjemmeside. Man har dog ikke mulighed for at definere hvordan sidens elementer skal præsenteres. For at råde bod på dette, findes CSS. En CSS-fil er en fil, hvori man definerer hvordan forskellige elementer i HTML-filen skal præsenteres. CSS-filen placeres sammen med HTML-filen og de øvrige elementer til hjemmesiden. I HTML-filen skriver man en reference til den CSS-fil, som skal bestemme udseendet af den pågældende HTML-fil. På den måde kan man sige, at man adskiller struktur (i HTML-filen) og udseende (i CSS-filen). Det smarte ved denne metode til at bestemme hjemmesiders udseende er at flere forskellige HTML-filer på et web-site kan referere til den samme CSS-fil. Derved kan man bestemme udseendet af mange HTML-sider ved hjælp af en enkelt CSS-fil. Og hvis f.eks. en farve, som går igen på alle sider på et site, skal ændres, kan man nøjes med at ændre denne farve i én CSS-fil.</p><br>
+
+                <h2>CSS-syntaks</h2>
+                <p>CSS-filen er opbygget af en serie af CSS-rule-sets. Et CSS rule-set består af en selector (som angiver hvilket HTML-element eller hvilken type af HTML-elementer, der skal styles) efterfulgt af en declaration block, som kan indeholde en eller flere declarations. Hver declaration starter med et property (som præciserer hvad der skal styles) som efterfølges af et kolon og slutter med en value (som præciserer hvordan styling’en er). Hver declaration afsluttes med et semikolon. Hele declaration block’en er omkranset af Tuborg-klammer.</p><br>
+
+                <h2>Selectors</h2>
+                <p>Den selector, som starter et css-rule-set kan være et element-type som »p«, »h1« eller »body«. I disse tilfælde gælder det pågældende rule-set for alle elementer af den pågældende type i det eller de html-dokumenter, som refererer til CSS-filen.</p><br>
+                
+                <p>Selector’en kan også være »#« efterfulgt af et id-navn. I disse tilfælde er det alle elementer i html-filen med det pågældende id-navn, som styles.</p><br>
+
+                <p>”.” efterfulgt af et class-navn kan også bruges som selector. I disse tilfælde er det alle elementer som har det pågældende class-navn, der styles.</p><br>
+            </div>
+            
+             <div class="billede1">
+                    <img src="billeder/css-rule-set-opbygning.png" id="stortbillede" alt="Opbygning af CSS-rule-sets">
+                <blockquote>
+                    Opbygning af CSS rule-sets. I praksis er det mest overskueligt at lade hver declaration stå på en linie for sig selv.
+                </blockquote>
+             </div>
+            
+            <div class="tekst2">
+                <p>I det følgende vises hvordan samme HTML-fil kan styles forskelligt ved hjælp af forskellige CSS-filer.</p><br>
+
+                <h2>HTML uden CSS</h2>
+
+                <button class="knap-delemne" type="button"> <a href="spoettrup-borg-css-eks/spoettrup-borg-uden-css.html" target="_blank">HTML uden CSS</a></button><br>
+                
+                <p>Dette link viser en hjemmeside med to billeder og lidt tekst, som ikke er stylet. Den eneste reelle indflydelse man har på udseendet af ens hjemmeside, når der ikke er tilknyttet en CSS-fil til HTML-filen, er hvilken rækkefølge elementerne gengives i.</p><br>
+
+                <h2>HTML med CSS version 1</h2>
+
+                 <button class="knap-delemne" type="button"> <a href="spoettrup-borg-css-eks/spoettrup-borg-css1.html" target="_blank">HTML med CSS version 1</a></button><br>
+                
+                <p>Dette link viser den samme hjemmeside. Her er den blot stylet med CSS-filen version 1.</p><br>
+
+                <p>Den øverste del af CSS-filen er en reset-del, som nulstiller de listede element-typer (html, body, div osv.) mht. margin. Denne nulstilling, som normalt er udbygget med mange andre nulstillinger, har til hensigt at undgå indstillinger, som man ikke er opmærksom på at få ændret.</p><br>
+
+                <p>Det første egentlige rule-set er »body«. Her bliver baggrundsfarven sat til RGB-farven (100,100,100) -  en neutral mørkegrå. Margin bliver sat til 30 pixels. Det betyder at der bliver en kant på 30 pixels hele vejen rundt om sidens elementer, hvor baggrundsfarven kan ses.</p>
+
+                <p>Header-tag’et i HTML-filen indeholder en h1-overskrift. Den styles med det næste rule-set ved at give headeren en baggrundsfarve og tilføje en padding på 10 pixels. Det betyder at baggrunden bag h1-elementet bliver gjort 10 pixels større ved alle fire kanter. Denne padding tildeles baggrundsfarven. Margin-bottom sørger for at det element, som gengives under Header-elementet holder en afstand på 20 pixels til Headeren.</p><br>
+
+                <p>H1-overskriften styles med næste rule-set. De tre første declarations font-family, font-style og font-weight bestemmer skrifttypen og -snittet for h1-overskriften. Color bestemmer skriftens farve. Font-size bestemmer striftstørrelsen og text-align bestemmer hvordan teksten skal ombrydes. Her er det valgt at teksten skal centreres i den container (her headeren), som h1-elementet er placeret i. </p><br>
+
+                <p>P-elementerne er stylet efter samme princip som h1-elementet.</p>
+
+                <p>Herefter følger 4 rule-sets, som styler de fire sections i HTML’en, som indeholder de to billeder og de to tekster. Nederst i disse rule-sets ses en declaration, som hedder »grid-area«. Den tildeler disse sektioner et unikt navn, som gør det muligt at placere dem i et grid, som defineres lidt længere nede i CSS-filen.</p><br>
+
+                <p>Stortbillede-rule-set’et bruges til at sørge for at de to billeder tildeles hele pladsen i bredden i den container, de placeres i.</p><br>
+
+                <p>Til sidst i denne CSS-fil ses det rule-set, som definerer det grid, der bruges til placering af de to billeder og de to tekster. »Grid-template-colums« deler grid’et ind i 3 lige brede kolonner. Grid-gap definerer hvor meget luft, der skal være mellem de forskellige grid-areas. Den sidste declaration »grid-template-areas« definerer hvilke felter de 4 sektioner bliver tildelt. Når der står »b1 b1 t1« i linie 70 betyder det at #billed-sektion-1 tildeles de to tredjedele af bredden til venstre og #tekst-sektion-1 tildeles den sidste tredjedel yderste til højre. I linien herunder tildeles billede 2 den første tredjedel og tekst 2 de to tredjedele til højre.</p><br>
+                <p>Dette grid-system er en meget praktisk måde at inddele pladsen på skærmen og tildele de enkelte dele til bestemte dele af HTML’en.</p><br>
+
+                <h2>HTML med CSS version 2</h2>
+                
+                <button class="knap-delemne" type="button"> <a href="spoettrup-borg-css-eks/spoettrup-borg-css2.html" target="_blank">HTML med CSS version 2</a></button><br>
+                
+                <p>Dette link viser den samme hjemmeside, som nu er stylet med CSS-filen version 2 i stedet.</p><br>
+
+                <p>Der er foretaget følgende ændringer i CSS-filen version 2 i forhold til version 1:</p>
+                <ul>
+                    <li>Baggrundsfarven er ændret.</li>
+                    <li>Tekstfarven (h1 og p) er ændret lidt.</li>
+                    <li>P-tekststørrelsen er ændret.</li>
+                    <li>Der er lagt en diffus skygge på tekstblokkene.</li>
+                    <li>Grid-template-areas i grid-rule-set’et er ændret, sådan at pladsen fordeles anderledes mellem billederne og de tilhørende tekster.</li>
+                </ul><br>
+                
+                <h2>Mobile first</h2>
+                <p>Der er meget fokus på at hjemmesider skal fungere godt på både mobiltelefoner, tablets, bærbare computere og desktop-computere. Da skærmene på mobiltelefoner er meget små i forhold til skærmene sluttet til desktop-computere, er det nødvendigt at hjemmesiden layoutes anderledes på mobil end på desktop. Da forholdet mellem visning af hjemmesider på mobiler og på desktop-computere hælder mere og mere mod mobiler, bruger man udtrykket »mobile first« og mener dermed at det er mest vigtigt at en hjemmeside fungerer godt på mobil.</p><br>
+
+                <p>Dette praktiseres ved hjælp af @media, som er en CSS-rule, der kan sørge for at en del af CSS-filen kun bruges, når bestemte kriterier er opfyldt – typisk omhandlende skærmens opløsning. På den måde kan man sørge for at hjemmesiden er optimeret til mobil-brug og kun i tilfælde af at hjemmesiden vises på en større skærm, bliver vist med et andet layout.</p><br>
+                
+                <img src="spoettrup-borg-css-eks/css1b.png" id="stortbillede" alt="CSS version 1">
+                
+                <br><br>
+                
+                <img src="spoettrup-borg-css-eks/css2b.png" id="stortbillede" alt="CSS version 2">
+                
+            </div>
+        </div>
+    </body>                                                                
+</html>
