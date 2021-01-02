@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divice-width initial-scale=1.0">
+        <title>Frameworks</title>
+        <link rel="stylesheet" href="../laer-bjarne.css">
+        <link rel="stylesheet" href="server-side-scripting.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yox6usb.css"> <!-- Inkluder Adobe Fonts -->
+    </head>
+
+    <body>
+        <header>
+            <h1>Server Side Scripting</h1>
+        </header>
+        
+        <div class="del-emne-grid">
+            
+            <div class="tekst1">
+            <h2>Server side scripting</h2>
+            <p>Et website opbygget udelukkende af HTML- og CSS-filer kaldes statisk. Når en sådan hjemmeside besøges, overfører web-serveren blot disse filer til klienten (browseren, som brugeren benytter sig af). Et website kan dog også være dynamisk, forstået på den måde at det, der overføres til klienten, er resultatet af et script afviklet på serveren. Der findes forskellige sprog, man kan bruges til server side scripting. Det mest anvendte er PHP.</p><br>
+
+            <h2>PHP</h2>
+            <p>Med dette sprog er det muligt at skrive varianter af HTML-filer, hvor man inkluderer specielle PHP-tags, som starter med <i>&#60?php</i> og slutter med <i>?&#62</i>
+            <?php og slutter med ?>. Man arkiverer disse varianter af HTML-filer med endelsen .php i stedet for .html. Derved kan serveren registrere at dette er en PHP-fil, hvor der er »actions«, som skal afvikles, før koden sendes afsted til klienten. Ved hjælp af forskellige PHP-tags er det muligt at modtage data fra klienten eller sende data.</p><br>
+                
+            <h2>Include</h2>
+            <p>PHP kan også bruges til genbruge kode. Måske har man et menusystem, som gengives på alle eller mange af siderne på et website. I stedet for at skrive denne kode, som definerer dette menusystem på alle disse sider, kan man i stedet skrive denne kode i én fil, som man giver fil-endelsen .inc. På alle de sider, som skal bruge dette menusystem, skriver man så i stedet blot</p><br>
+            
+                <p><i>&#60?php include("menu.inc"); ?&#62</i></p><br>
+
+            <p>det sted, hvor menu-koden skal være. Serveren vil så ved gennemgang af php-filen erstatte dette php-include-tag med den kode, som er indeholdt i filen menu.inc. Derved kan man opbygge et lille bibliotek af kodestumper, som bliver brugt flere steder på sitet. Når en af disse kodestumper så skal bruges, indsætter man blot overstående php-include-tag med det aktuelle fil-navn i stedet for menu.inc. En anden fordel ved dette system er at man kan foretage rettelser i menusystemet f.eks. ved blot at rette i den ene fil, som indeholder menusystemet, i stedet for i alle de HTML-filer, hvor menusystemet bruges. </p><br>
+
+            <h2>Require</h2>
+            <p>Php-tag’et require er det samme som include, bortset fra at require-tag’et stopper afviklingen af scriptet, hvis der opstår en fejl. Include-tag’et fortsætter afviklingen af scriptet, hvis der opstår en fejl.</p><br>
+                
+            <p>Anden brug af PHP:</p>
+            <ul>
+                <li>PHP kan bruges til at give brugeren mulighed for at skrive i eller tilgå data i en database.</li>
+                <li>PHP kan indsætte aktuel information hentet fra anden hjemmeside, f.eks. en aktuel vejrudsigt.</li>
+                <li>PHP kan håndtere data i forbindelse med udfyldelse af formularer.</li>
+            </ul><br>
+            </div>
+            
+        </div>
+    </body>                                                                
+</html>
