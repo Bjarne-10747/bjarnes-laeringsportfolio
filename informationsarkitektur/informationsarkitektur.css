@@ -1,0 +1,22 @@
+.del-emne-grid {
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "t1"
+            "t2"
+            "t3";
+    }
+
+@media screen and (min-width: 700px) {
+    
+    .del-emne-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "t1 t2 t3";  
+    }
+    
+    .tekst1 {column-count: 1;}
+    .tekst2 {column-count: 1;}
+    .tekst3 {column-count: 1;}
+}
