@@ -117,6 +117,13 @@ a {
     font-size: 18px;
 }
 
+.knapitekst {
+    text-decoration: underline;                             /*  knap-i-loebende-tekst  */
+    color: rgb(50,65,50);
+}
+
+
+                                                            /*  Knap udseende start   */
 .knap-delemne {
     border-radius: 5px;
     border: none;
@@ -136,6 +143,25 @@ a {
     background-color: rgb(193,205,193);
 }
 
+.knap-forside {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(131,155,131);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 35px;
+    margin-right: 5px;
+}
+
+.knap-forside:hover {
+    box-shadow: 0px 0px 10px -2px rgb(50,65,50);
+    background-color: rgb(193,205,193);                  /*  Knap udseende slut*/
+}
+                                                        /*  Knapraekker start*/
 .knapsamling-moerk {
     background-color: rgb(154,174,154);
     padding-top: 5px;
@@ -153,8 +179,8 @@ a {
     padding-right: 20px;
     text-align: center;
 }
-
-.tekst1 {
+                                                            /*  Knapraekker slut*/
+.tekst1 {                                                   /*  tekstkasser start*/
     background-color: rgb(154,174,154);
     border-radius: 10px;
     padding: 25px;
@@ -212,9 +238,9 @@ a {
     column-gap: 25px;
     box-shadow: 0px 0px 20px -5px rgb(50,65,50);
     grid-area: t6;
-}
+}                                                             /*  tekstkasser slut   */
 
-.billede1 {
+.billede1 {                                                   /*  billedkasser start   */
     background-color: rgb(154,174,154);
     border-radius: 10px;
     padding: 10px;
@@ -242,13 +268,13 @@ a {
     column-gap: 25px;
     box-shadow: 0px 0px 20px -5px rgb(50,65,50);
     grid-area: b3;
-}
+}                                                             /*  billedkasser slut   */
 
-#stortbillede {
+#stortbillede {                                               /*  Fyld billedkasse ud   */
     width: 100%;
 }
 
-.del-emne-grid {
+.del-emne-grid {                                               /*  kasse-grid   */
         margin-top: 0px;
         margin-left: 35px;
         margin-right: 35px;
@@ -256,7 +282,7 @@ a {
         grid-gap: 20px;
     }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) {                            /*  Desktop visning   */
     a {font-size: 14px;}
     p {font-size: 14px;}
     ul {font-size: 14px;}
