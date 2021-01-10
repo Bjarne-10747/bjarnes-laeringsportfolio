@@ -2,9 +2,7 @@
     display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
-            "t1"
-            "b2"
-            "t2";
+            "t1";
     }
 
 @media screen and (min-width: 700px) {
@@ -13,10 +11,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-            "t1 t1 t1"
-            "b2 b2 t2";  
+            "t1 t1 t1";  
     }
     
     .tekst1 {column-count: 3;}
     .tekst2 {column-count: 1;}
-    .tekst3 {column-count: 3;}
+    .tekst3 {column-count: 1;}
+}
